@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Private page</title>
+    AuthName "Restricted access"
+AuthUserFile "/app/.htpasswd"
+Require valid-user
   </head>
   <body>
     <p>Only people who know the password should be able to see this page.</p>
